@@ -1,0 +1,15 @@
+NATS-Bench neural networks' architectures and performance results are available at the 
+architectures directory.
+
+To regenerate the JSON files with the architectures, take the following steps:
+
+- clone the NATS-Bench git repository from https://github.com/D-X-Y/NATS-Bench
+- copy extract_neural_networks.py to the root of the NATS-Bench git repository
+- create a virtual env at the root of the NATS_Bench git repository with the command "python3 -m venv venv"
+- activate the virtual env using "source venv/bin/activate"
+- Install Python requirements using "pip install -r requirements"
+- create a 'benchmarks' directory, download the uncompressed archives with tar extension from 
+  https://drive.google.com/drive/folders/1zjB6wMANiKwB2A1yil2hQ8H_qyeSe2yt to that directory
+- untar the architectures benchmarks tar files to the benchmarks directory. You may delete
+  the original tar files. 
+- run "python extract_neural_network.py"
